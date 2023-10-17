@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel Reservation Form</title>
+</head>
+<body>
+  <h1>Travel Reservation Form</h1>
+  <h3>* denotes mandatory</h3>
+
+  <form id="reservation_form" method="POST">
+    <label for="name">Full name*:</label><br>
+    <input type="text" name="full_name" placeholder="FirstName LastName" autofocus="autofocus" value=""><br>
+
+    <label for="email">Email address*:</label><br>
+    <input type="text" name="email_addr" value=""><br>
+
+    <label for="package">Select Tour Package* :</label><br>
+    <select name="package">
+      <option value="Goa">Goa</option>
+      <option value="Munnar">Munnar</option>
+      <option value="Bengaluru">Bengaluru</option>
+      <option value="Shimla">Shimla</option>
+    </select><br>
+
+    <label for="arrival">Arrival date*:</label><br>
+    <input type="date" name="arrivaldate" placeholder="m/d/y"><br>
+
+    <label for="number_of_persons">Number of persons*:</label><br>
+    <input type="number" name="number_of_persons" value=""><br>
+
+    <label for="activities">What would you want to avail?*</label><br>
+    <input type="checkbox" name="activities[]" value="boarding">Boarding<br>
+    <input type="checkbox" name="activities[]" value="fooding">Fooding<br>
+    <input type="checkbox" name="activities[]" value="sight_seeing">Sight seeing<br>
+
+    <label for="disc">Discount Coupon code:</label><br>
+    <input type="text" name="disc" value=""><br>
+
+    <label for="tandc">Terms and conditions*:</label><br>
+    <input type="checkbox" name="tandc" checked>I agree
+    <input type="checkbox" name="tandc" checked>I do not agree<br>
+
+    <input type="submit" value="Complete reservation">
+  </form>
+</body>
+</html>
